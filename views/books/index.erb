@@ -1,28 +1,41 @@
 <h1>Books</h1>
-<a href="/users/new">Sign up</a>
 
-<a href="/books/new">Add new book</a>
+<% if logged_in? %>
+  <h2>Welcome to Books <%= current_user['first_name'] %></h2>
 
-<section class="books">
+  <section class="controls">
+    <form action="/sessions" method="POST">
+      <input type="hidden" name="_method" value="delete">
+      <button>Logout</button>
+    </form>  
+    <a href="/books/new">Add book</a>
+  </section>  
+   <section class="books">
     <% books.each do |book| %>
-        <section class="book">
-            <header>
-                <h2><%= book['name'] %></h2>
+      <section class="book">
+        <header>
+          <h2><%= book['name'] %></h2>
 
-                <section class="controls">
-                <a href="/books/<%= book['id']%>/edit">Edit</a>
+          <section class="controls">
+            <a href="/books/<%= book['id'] %>/edit">Edit</a>
 
-                <form action="/books/<%= book['id'] %>" method="POST">
-                <input type="hidden" name="_method" value="delete">
-                <button>Delete</button>
-                </form>
-                </section>
-            </header>
-                <h3>Author: <%= book['author']%></h3>
-                <h3>Genre: <%= book['genre']%></h3>
-                <h3>Year first published: <%= book['year']%></h3>
-                <img src="<%= book['image_url'] %>" alt="">
-        </section>
-        <% end %>
+            <form action="/books/<%= book['id'] %>" method="POST">
+              <input type="hidden" name="_method" value="delete">
+              <button>Delete</button>
+            </form>
+          </section>
+        </header>
+        <h3>Author: <%= book['author']%></h3>
+        <h3>Genre: <%= book['genre']%> </h3>
+        <h3>Year first published: <%= book['year']%> </h3>
+        <img src="<%= book['image_url'] %>" alt="">
+      </section>
+    <% end %>
+  </section>
+<% else %>
+  <a href="/users/new">Sign up</a>
+  <a href="/sessions/new">Login</a>
+<% end %>         
 
-</section>
+                
+                
