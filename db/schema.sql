@@ -14,3 +14,10 @@ VALUES('The Mousetrap', 'Agatha Christie','https://images.unsplash.com/photo-151
 
 INSERT INTO books(name, author, image_url, genre, year)
 VALUES('The Great Gatsby', 'F. Scott Fitzgerald', 'https://images.unsplash.com/photo-1615413833480-6e8427dbcc5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGhlJTIwZ3JlYXQlMjBnYXRzYnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60', 'tragedy', 1925);
+
+CREATE TABLE users(
+    id SERIAL PRIMARY KEY,
+    first_name TEXT,
+    last_name TEXT,
+    email TEXT
+);
