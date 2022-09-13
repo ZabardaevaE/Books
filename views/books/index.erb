@@ -6,6 +6,15 @@
         <section class="book">
             <header>
                 <h2><%= book['name'] %></h2>
+
+                <section class="controls">
+                <a href="/books/<%= book['id']%>/edit">Edit</a>
+
+                <form action="/books/<%= book['id'] %>" method="POST">
+                <input type="hidden" name="_method" value="delete">
+                <button>Delete</button>
+                </form>
+                </section>
             </header>
                 <h3>Author: <%= book['author']%></h3>
                 <h3>Genre: <%= book['genre']%></h3>
