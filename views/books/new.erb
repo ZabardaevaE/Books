@@ -1,4 +1,4 @@
-<h1>Add Book</h1>
+<%# <h1>Add Book</h1>
 <form action="/books" method="POST">
     <label for="">Name</label>
     <input type="text" name="name">
@@ -18,4 +18,29 @@
 
     <button>Add book</button>
 
+</form> %>
+<div class="sign-up-form">
+
+<form action="/books" method="POST">
+<h1>Add Book</h1>
+    <%# <label for="">Name</label> %>
+    <input type="text" class="input-box" placeholder="Name" name="name">
+
+    <%# <label for="">Image URL: </label> %>
+    <input type="text" class="input-box" placeholder="Image URL" name="image_url">
+
+    <%# <label for="">Author</label> %>
+    <input type="text" class="input-box" placeholder="Author" name="author">
+
+    <%# <label for="">Genre</label> %>
+    <input type="text" class="input-box" placeholder="Genre" name="genre">
+
+    <%# <label for="">Year first published</label> %>
+    <input type="text" class="input-box" placeholder="Year first published" name="year">
+
+
+    <button class="signup-btn">Add book</button>
+
 </form>
+</div>
+

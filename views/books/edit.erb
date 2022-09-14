@@ -1,22 +1,29 @@
-<h1>Edit Book</h1>
+
+<div  class="sign-up-form">
+<%# <h1>Edit Book</h1> %>
 <form action="/books/<%= book['id'] %>" method="POST">
     <input type="hidden" name="_method" value="put">
-    <label for="">Name: </label>
-    <input type="text" name="name" value="<%= book['name'] %>">
+    <h1>Edit Book</h1>
 
-    <label for="">Image URL: </label>
-    <input type="text" name="image_url" value="<%= book['image_url'] %>">
+    <%# <label for="">Name: </label> %>
+    <input type="text" class="input-box" placeholder="Name" name="name" value="<%= book['name'] %>">
 
-    <label for="">Author: </label>
-    <input type="text" name="author" value="<%= book['author'] %>">
+    <%# <label for="">Image URL: </label> %>
+    <input type="text" class="input-box" placeholder="Image URL" name="image_url" value="<%= book['image_url'] %>">
 
-    <label for="">Genre: </label>
-    <input type="text" name="genre" value="<%= book['genre'] %>">
+    <%# <label for="">Author: </label> %>
+    <input type="text" class="input-box" placeholder="Author" name="author" value="<%= book['author'] %>">
 
-    <label for="">Year first published: </label>
-    <input type="text" name="year" value="<%= book['year'] %>">
+    <%# <label for="">Genre: </label> %>
+    <input type="text" class="input-box" placeholder="Genre" name="genre" value="<%= book['genre'] %>">
+
+    <%# <label for="">Year first published: </label> %>
+    <input type="text" class="input-box" placeholder="Year first published" name="year" value="<%= book['year'] %>">
 
 
-    <button>Update book</button>
+    <button class="signup-btn">Update book</button>
 
 </form>
+</div>
+
+

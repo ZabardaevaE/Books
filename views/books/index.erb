@@ -2,17 +2,28 @@
 <p class="subhead">Books is a Sinatra CRUD app to keep track of the books that users  want to read.</p> %>
 <%# <p>To get started, <a href="/users/new">Sign up</a> or login if you already a user <a href="/sessions/new">Login</a></p> %>
 
-<% if logged_in? %>
-  <h2>Welcome to Books <%= current_user['first_name'] %></h2>
 
-  <section class="controls">
-    <form action="/sessions" method="POST">
-      <input type="hidden" name="_method" value="delete">
-      <button>Logout</button>
-    </form>  
-    <a href="/books/new">Add book</a>
-  </section>  
+
+
+<% if logged_in? %>
+<div class="index">
+    <div class="index-header"> 
+    <h2>Welcome to Books <%= current_user['first_name'] %></h2>
+    <br>
+    </div>
+ </div>    
+
+    <section class="controls buttons">
+        <form action="/sessions" method="POST">
+        <input type="hidden" name="_method" value="delete">
+        <button>Logout</button>
+        </form>  
+        <a href="/books/new">Add book</a>
+    </section>  
+    
+ 
    <section class="books">
+   
     <% books.each do |book| %>
       <section class="book">
         <header>
