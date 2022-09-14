@@ -25,14 +25,6 @@ CREATE TABLE users(
 
 ALTER TABLE users ADD COLUMN password_digest TEXT;
 
-CREATE TABLE likes(
-  id SERIAL PRIMARY KEY,
-  user_id INTEGER,
-  book_id INTEGER
-);
 
-ALTER TABLE likes
-ADD CONSTRAINT unique_likes
-UNIQUE (user_id, book_id);
 
 ALTER TABLE books ADD COLUMN owner TEXT;

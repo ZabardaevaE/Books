@@ -15,23 +15,19 @@ $ git clone my-awesome-app
 $ cd my-awesome-app
 $ node app.js
 ```
-- Add in-app screenshots.
+
 
 ## :pencil2: Planning & Problem Solving
 - Planning process
 ![Wireframing](https://imgur.com/a/V0uOF7P)
+![Wireframing](https://imgur.com/Oeg6xjr)
 
 ## :rocket: Cool tech
 - Programming languages: Ruby, SQL
 
 
-## :scream: Bugs to fix :poop:
-- Anything a little broken
-- Anything a LOT broken
-- Buttons to not click too many times (cause its broken :unamused:)
-
 ## :sob: Lessons learnt
-What I would do differently if I could wind back the clock...
+Put plan minimum and plan maximum. 
 
 ## :white_check_mark: Future features
-Cool things I would add if I can keep working on this
+Add book API. 
