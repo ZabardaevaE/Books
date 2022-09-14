@@ -14,3 +14,4 @@ get '/users/new' do
     create_user(first_name, last_name, email, password)
     redirect '/'
   end
+  
