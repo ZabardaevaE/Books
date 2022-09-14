@@ -1,10 +1,14 @@
 # Project Name
-The briefest description of my cool project and why you should all use it.
+ Books is a Sinatra CRUD app to keep track of the books that users  want to read.
+
+Website uses sinatra, bcrypt and pg gems.
 
 ## :computer: [Click here](https://boiling-anchorage-60576.herokuapp.com/) to see my live project!
 
 ## :page_facing_up: About
-- How to use my awesome project.
+- How to use Books app.
+Ceate a new user account by using Sign up button, sign in, and add books to your library. Once logged in, you can view, edit and delete your books.
+
 - Download instructions (if relevant):
 ```zsh
 $ git clone my-awesome-app
@@ -14,16 +18,12 @@ $ node app.js
 - Add in-app screenshots.
 
 ## :pencil2: Planning & Problem Solving
-- Talk about approach to the problem.
-- Add screenshots/drawings of doodles/plans during the planning phase.
-- Flow charts of app logic.
-![Wireframing](https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+- Planning process
+![Wireframing](https://imgur.com/a/V0uOF7P)
 
 ## :rocket: Cool tech
-- Programming languages
-- Libraries
-- Animations
-- Anything else you'd be proud to show your parents
+- Programming languages: Ruby, SQL
+
 
 ## :scream: Bugs to fix :poop:
 - Anything a little broken
